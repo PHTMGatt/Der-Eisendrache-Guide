@@ -1,0 +1,66 @@
+/* 'Home.css' */
+/* ------------- */
+
+/* 1. PAGE CONTAINER */
+.home-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.75rem;       /* 12px */
+  color: #efefef;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+}
+
+/* 2. TYPOGRAPHY */
+.home-page__title {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.home-page__intro,
+.home-page__note {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* 3. LIST STYLING */
+.home-page__list {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+.home-page__item {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+/* 4. RESPONSIVE BREAKPOINTS */
+/* Tablet & small desktop */
+@media (max-width: 768px) {
+  .home-page {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  .home-page__title {
+    font-size: 1.75rem;
+  }
+}
+
+/* Mobile (~360px width) */
+@media (max-width: 480px) {
+  .home-page {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+  .home-page__title {
+    font-size: 1.5rem;
+  }
+  .home-page__item,
+  .home-page__intro,
+  .home-page__note {
+    font-size: 0.95rem;
+  }
+}

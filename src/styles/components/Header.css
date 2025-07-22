@@ -1,0 +1,131 @@
+/* 'Header.css' */
+/* ------------- */
+
+/* 1. BASE STYLES */
+.header-site {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.header-site__bg {
+  position: absolute;
+  inset: 0;
+  background: url('/src/assets/images/DE-Header1.jpg') center/cover no-repeat;
+  filter: blur(0px) brightness(0.8);
+  transform: scale(1.05);
+  z-index: 0;
+}
+
+.header-site__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* 2. ANIMATIONS */
+@keyframes subtleGlowPulse {
+  0%, 100% {
+    text-shadow:
+      0 0 6px #4da6ff,
+      0 0 12px #4da6ff,
+      0 0 20px #4da6ff;
+  }
+  50% {
+    text-shadow:
+      0 0 10px #6dbaff,
+      0 0 16px #6dbaff,
+      0 0 24px #6dbaff;
+  }
+}
+
+/* 3. TITLE STYLING */
+.header-site__title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e0f0ff;
+  letter-spacing: 0.5px;
+  text-shadow:
+    0 0 6px #4da6ff,
+    0 0 12px #4da6ff,
+    0 0 20px #4da6ff;
+  animation: subtleGlowPulse 5s ease-in-out infinite;
+  transition: text-shadow 0.3s ease-in-out;
+  cursor: default;
+}
+
+.header-site__title:hover {
+  text-shadow:
+    0 0 10px #90d4ff,
+    0 0 18px #90d4ff,
+    0 0 28px #90d4ff;
+}
+
+/* 3. TITLE STYLING */
+.header-site__title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e0f0ff;
+  letter-spacing: 1px;
+  text-shadow:
+    0 0 6px #4da6ff,
+    0 0 12px #4da6ff,
+    0 0 18px #4da6ff;
+  animation: glowPulse 4s ease-in-out infinite;
+  cursor: pointer;
+}
+
+/* 4. NAV LINKS */
+.header-site__content nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-site__content nav a {
+  color: #a8d1ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.header-site__content nav a:hover,
+.header-site__content nav a.active {
+  color: #ffffff;
+}
+
+/* 5. RESPONSIVE */
+@media (max-width: 768px) {
+  .header-site {
+    height: auto;
+  }
+
+  .header-site__content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .header-site__title {
+    font-size: 1.8rem;
+    animation: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-site__content {
+    padding: 0.75rem 1rem;
+  }
+
+  .header-site__title {
+    font-size: 1.6rem;
+  }
+}

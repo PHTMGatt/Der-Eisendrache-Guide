@@ -1,0 +1,88 @@
+/* 'Parts.css' */
+/* ------------- */
+
+/* 1. PAGE CONTAINER */
+.parts-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  border-radius: 0.75rem;        /* 12px */
+  color: #efefef;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+}
+
+/* 2. TYPOGRAPHY */
+.parts-page__title {
+  margin: 0 0 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Section wrapper */
+.parts-page__section {
+  margin-bottom: 1.5rem;
+}
+
+/* Section subtitles */
+.parts-page__subtitle {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Lists */
+.parts-page__list {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+/* Ordered vs unordered */
+.parts-page__list--ordered {
+  list-style: decimal inside;
+}
+
+.parts-page__list:not(.parts-page__list--ordered) {
+  list-style: disc inside;
+}
+
+/* List items */
+.parts-page__item {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* 3. RESPONSIVE BREAKPOINTS */
+/* Tablet & small desktop */
+@media (max-width: 768px) {
+  .parts-page {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .parts-page__title {
+    font-size: 1.75rem;
+  }
+  .parts-page__subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile (~360px width) */
+@media (max-width: 480px) {
+  .parts-page {
+    margin: 0.5rem;
+    padding: 0.75rem;
+  }
+  .parts-page__title {
+    font-size: 1.5rem;
+  }
+  .parts-page__subtitle {
+    font-size: 1rem;
+  }
+  .parts-page__item {
+    font-size: 0.95rem;
+  }
+}

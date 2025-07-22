@@ -1,0 +1,74 @@
+/* src/styles/components/BowNav.css */
+/* --------------------------------- */
+
+/* 1. CONTAINER: align everything by text baseline */
+.bow-nav {
+  display: flex;
+  align-items: baseline;      /* <-- baseline alignment! */
+  gap: 1.5rem;
+  padding: 1.25rem 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+/* 2. LABEL: no extra margins or line‐height quirks */
+.bow-nav__title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  line-height: 1;             /* force tight baseline */
+}
+
+/* 3. LIST LAYOUT */
+.bow-nav__list {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bow-nav__item {
+  margin: 0;
+  padding: 0;
+}
+
+/* 4. LINKS: inline‐flex with consistent line‐height */
+.bow-nav__link {
+  display: inline-flex;
+  align-items: baseline;      /* match baseline too */
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;             /* force tight baseline */
+  color: #4da6ff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.bow-nav__link:hover {
+  color: #a8d1ff;
+}
+
+/* 5. ACTIVE STATE: no block‐level underline pushing things */
+.bow-nav__link--active {
+  color: #fff;
+  font-weight: 600;
+}
+
+.bow-nav__link--active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #4da6ff;
+}

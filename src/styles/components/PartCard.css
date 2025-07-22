@@ -1,0 +1,52 @@
+/* 'PartCard.css' */
+/* ---------------- */
+
+/* 1. BASE STYLES */
+.part-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;                 /* 16px */
+  border-radius: 0.5rem;         /* 8px */
+  margin-bottom: 1rem;           /* 16px */
+}
+
+.part-card__title {
+  margin: 0 0 0.75rem;           /* bottom 12px */
+  font-size: 1.25rem;            /* ~20px */
+  color: #ffffff;
+}
+
+.part-card__list {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.part-card__item {
+  margin-bottom: 0.5rem;         /* 8px */
+  line-height: 1.4;
+  color: #e0e0e0;
+}
+
+/* 2. RESPONSIVE ADJUSTMENTS */
+/* Tablet & small desktop */
+@media (max-width: 768px) {
+  .part-card {
+    padding: 0.75rem;            /* 12px */
+  }
+  .part-card__title {
+    font-size: 1.2rem;           /* ~19px */
+  }
+}
+
+/* Mobile (~360px width) */
+@media (max-width: 480px) {
+  .part-card {
+    padding: 0.5rem;             /* 8px */
+  }
+  .part-card__title {
+    font-size: 1.1rem;           /* ~18px */
+  }
+  .part-card__item {
+    font-size: 0.95rem;          /* ~15px */
+  }
+}
