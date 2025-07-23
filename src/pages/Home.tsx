@@ -1,53 +1,67 @@
-// 'Home.tsx'
-// --------------
-
-import React from 'react';
+// src/pages/Home.tsx
+import React, { useRef } from 'react';
 import '../styles/pages/Home.css';
+import { deGuide } from '../data/deGuide';
 
-const Home: React.FC = () => (
-  <div className="home-page">
-    <h1 className="home-page__title">Der Eisendrache EE Guide</h1>
-    <p className="home-page__intro">
-      Welcome to the full Easter Egg walkthrough. Follow each step in order to complete the quest.
-    </p>
+const Home: React.FC = () => {
+  const iframeRef = useRef<HTMLIFrameElement>(null);
 
-    <ol className="home-page__list">
-      <li className="home-page__item">
-        Turn on the Power + Feed all 3 Dragons to unlock the Wrath of the Ancients.
-      </li>
-      <li className="home-page__item">
-        Choose a bow to upgrade (Storm is recommended for solo). Complete the bow quest.
-      </li>
-      <li className="home-page__item">
-        Begin the Wisp Step: find and shoot 4 glowing wisps using your upgraded bow.
-      </li>
-      <li className="home-page__item">
-        Teleport back in time: collect the fuses, the soul canister, and memorize the safe code.
-      </li>
-      <li className="home-page__item">
-        Return to present. Kill Panzer, install fuses into Death Ray, enter the code from earlier.
-      </li>
-      <li className="home-page__item">
-        Collect the floppy disk, insert it, and play Simon Says at the computers (2 locations).
-      </li>
-      <li className="home-page__item">
-        Press the green button at Death Ray to drop Dempsey’s Pod.
-      </li>
-      <li className="home-page__item">
-        Repeat the Wisp Step again → travel back → collect tablet → place it by Double Tap.
-      </li>
-      <li className="home-page__item">
-        Insert golden rod into Pyramid Room → follow ghost Keeper and get kills in each circle.
-      </li>
-      <li className="home-page__item">
-        Place soul tube in MPD → ensure you have the Ragnaroks before starting boss fight.
-      </li>
-    </ol>
+  const seekTo = (time: string) => {
+    const [min = 0, sec = 0] = time.split(':').map(Number);
+    const seconds = min * 60 + sec;
 
-    <p className="home-page__note">
-      Use the Parts tab to find Shield, Ragnarok DG-4, and the Golden Plunger.
-    </p>
-  </div>
-);
+    iframeRef.current?.contentWindow?.postMessage(
+      JSON.stringify({  
+        event: 'command',
+        func: 'seekTo',
+        args: [seconds, true],
+      }),
+      '*'
+    );
+  };
+
+  return (
+    <div className="home-page-container">
+      <div className="home-page">
+        <h1 className="home-page__title">Der Eisendrache EE Guide</h1>
+        <p className="home-page__intro">
+          Follow each step below to complete the quest.
+        </p>
+
+        {typeof deGuide.videoUrl === 'string' && (
+          <div className="video-wrapper">
+            <iframe
+              ref={iframeRef}
+              className="youtube-frame"
+              src={deGuide.videoUrl}
+              title="Der Eisendrache EE Guide Video"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            />
+          </div>
+        )}
+
+        <h2 className="home-page__section">Main Easter Egg Steps</h2>
+
+        {Array.isArray(deGuide.mainEE) && deGuide.mainEE.length > 0 && (
+          <div className="step-grid">
+            {deGuide.mainEE.map((step, idx) => (
+              <button
+                key={idx}
+                className="step-item"
+                onClick={() => seekTo(step.time)}
+                title={`Jump to ${step.time}`}
+                type="button"
+              >
+                <span className="step-index">{idx + 1}.</span> {step.label}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
 
 export default Home;
