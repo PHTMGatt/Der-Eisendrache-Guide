@@ -8,8 +8,8 @@ export const deGuide = {
     link: "https://youtube.com/@codenamepizza"
   },
   mainEE: [
-    { time: "00:30", label: "Turn on Power + Feed 3 Dragons to unlock Wrath of the Ancients" },
-    { time: "01:59", label: "Pick up Storm Bow from the box" },
+    { time: "00:30", label: "Turn on Power + Feed 3 Dragons" },
+    { time: "01:59", label: "Obtain the Storm Bow" },
 
     { time: "02:01", label: "Wisp Step Begins – Shoot 4 Wisps (8 possible locations)" },
     { time: "02:30", label: "Teleport Back in Time – Grab Fuses, Code, and Blue Tube" },

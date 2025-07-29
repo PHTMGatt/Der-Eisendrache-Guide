@@ -7,6 +7,20 @@ import '../styles/pages/Wisp.css';
 const Wisp: React.FC = () => (
   <div className="wisp-page">
     <h1 className="wisp-page__title">Wisp Step – All Spawn Locations</h1>
+
+    {/* Embedded YouTube video, starts at 1:49 (109s) and ends at 2:30 (150s) */}
+    <div className="wisp-page__video-embed">
+      <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/NhDv6R5YPEs?start=109&end=150"
+        title="Wisp Step Guide – DE"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
+
     <p className="wisp-page__intro">
       After upgrading your bow (Storm is best), a glowing wisp will spawn in one of eight locations.
       Shoot it with your upgraded bow to proceed. Repeat this four times in one round.

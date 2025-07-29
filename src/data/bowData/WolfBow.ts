@@ -1,38 +1,27 @@
-// --- Wolf Bow Guide (via JCBackfire) ---
+// --- Wolf Bow Guide (via MrTLexify) ---
 export const wolfBowSteps = {
-  videoUrl: "https://youtu.be/1w5o8svMqOA",
+  videoUrl: "https://youtu.be/9xBsUQrpDag?t=127",
   credit: {
-    author: "JCbackfire",
-    link: "https://youtube.com/@JCbackfire"
+    author: "MrTLexify",
+    link: "https://www.youtube.com/@MrTLexify"
   },
   timestamps: [
-    { time: "00:01", label: "Intro – Wolf Bow requirements overview" },
-    { time: "00:04", label: "Must have base bow (Wrath of the Ancients)" },
+    { time: "2:07", label: "Start the Wolf Bow quest: paintings" },
+    { time: "2:12", label: "Painting order: Throne → Horseback → Battlefield → Cowering King" },
+    { time: "2:29", label: "Collect broken arrow from wall in Undercroft" },
 
-    // Paintings
-    { time: "00:08", label: "Step 1: Paintings (order randomizes)" },
-    { time: "00:10", label: "Painting locations: Clock Tower, Church, Samantha's Room" },
-    { time: "00:21", label: "Painting order: King on throne → Horseback → Gloomy aftermath → Dead King" },
+    { time: "2:31", label: "Shoot flag at rocket test site to drop wolf skull" },
+    { time: "2:39", label: "Place skull on skeleton in pyramid" },
+    { time: "2:44", label: "Follow ghost wolf to 3 dig sites" },
+    { time: "2:48", label: "Collect souls at each dig site (~10 per)" },
+    { time: "2:54", label: "Interact at each site to collect bones" },
 
-    // Binding the Quest
-    { time: "00:29", label: "Step 2: Collect broken arrow in Church" },
+    { time: "3:10", label: "Ghost moves to wall — activate anti-gravity" },
+    { time: "3:19", label: "Wall-run and shoot two arrow shots on symbol" },
+    { time: "3:28", label: "Platform appears — jump on and interact" },
+    { time: "3:32", label: "Collect reforged Wolf Arrow" },
 
-    // Wolf Skull & Ghost
-    { time: "00:35", label: "Step 3: Shoot red flag near rocket to drop skull" },
-    { time: "00:41", label: "Pick up skull and go to pyramid" },
-    { time: "00:44", label: "Step 4: Activate bones → Summon Wolf Ghost" },
-    { time: "00:48", label: "Follow ghost to dig sites (3 total)" },
-    { time: "00:51", label: "Collect ~10 souls per dig site to continue" },
-
-    // Reforged Arrow
-    { time: "00:54", label: "Step 5: Wait for anti-gravity in pyramid" },
-    { time: "00:57", label: "Wall run + shoot symbol above the hole" },
-    { time: "01:02", label: "Stand on new platform and interact with skeleton" },
-    { time: "01:06", label: "Pick up reforged arrow" },
-
-    // Final Step
-    { time: "01:08", label: "Step 6: Place arrow in pyramid box" },
-    { time: "01:09", label: "Get ~20 souls to charge the arrow" },
-    { time: "01:11", label: "Interact again to complete Wolf Bow upgrade" }
+    { time: "3:36", label: "Place reforged arrow in pyramid pedestal" },
+    { time: "3:41", label: "Collect 20 zombie souls to finish upgrade" }
   ]
 };

@@ -8,9 +8,10 @@
   padding: 1.5rem;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(4px);
-  border-radius: 0.75rem;        /* 12px */
+  border-radius: 0.75rem;
   color: #efefef;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+  margin-top: 12rem;
 }
 
 /* 2. TYPOGRAPHY */
@@ -56,7 +57,6 @@
 }
 
 /* 3. RESPONSIVE BREAKPOINTS */
-/* Tablet & small desktop */
 @media (max-width: 768px) {
   .parts-page {
     margin: 1rem;
@@ -70,7 +70,6 @@
   }
 }
 
-/* Mobile (~360px width) */
 @media (max-width: 480px) {
   .parts-page {
     margin: 0.5rem;
@@ -86,3 +85,26 @@
     font-size: 0.95rem;
   }
 }
+
+/* 4. VIDEO LINK STYLING */
+.parts-page__video-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: #4da6ff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.parts-page__video-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.parts-page__video-link::before {
+  content: '🔗';
+  font-size: 1rem;
+  display: inline-block;
+}
+

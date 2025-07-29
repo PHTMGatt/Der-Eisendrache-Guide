@@ -1,51 +1,40 @@
+// --- Void Bow Guide (via MrTLexify) ---
 export const voidBow = {
-  videoUrl: "https://www.youtube.com/watch?v=FIKjOAqkHGw",
+  videoUrl: "https://youtu.be/9xBsUQrpDag?t=221",
   credit: {
-    author: "TheRealGamer",
-    link: "https://youtube.com/@therealgamer"
+    author: "MrTLexify",
+    link: "https://www.youtube.com/@MrTLexify"
   },
   timestamps: [
-    { time: "00:01", label: "Intro – Void Bow requirements overview" },
-    { time: "00:03", label: "Make sure you have Wrath of the Ancients" },
-    { time: "00:06", label: "Turn on subtitles – makes this bow easier" },
+    { time: "3:41", label: "Shoot symbol above Double Tap to start quest" },
+    { time: "3:45", label: "Get melee kill near purple tile" },
+    { time: "3:57", label: "Activate urn after kill to begin ritual" },
 
-    // Binding the Quest
-    { time: "00:09", label: "Shoot symbol above double tap to begin quest" },
-    { time: "00:11", label: "Pick up Void Arrow" },
+    // Skulls
+    { time: "4:04", label: "Collect 6 skulls around the map" },
+    { time: "4:05", label: "Skull 1: Above Double Tap" },
+    { time: "4:07", label: "Skull 2: Mule Kick room" },
+    { time: "4:09", label: "Skull 3: Near Double Tap again" },
+    { time: "4:13", label: "Skull 4: Samantha’s room near KN-44" },
+    { time: "4:15", label: "Skull 5: Sink in Teleporter room" },
+    { time: "4:20", label: "Skull 6: Truck bed at Rocket Test site" },
 
-    // First Step – Knife Kill
-    { time: "00:14", label: "Go to Clock Tower, get knife kill on lit tile" },
-    { time: "00:16", label: "Interact with purple light after knife kill" },
+    // Crawlers & Name
+    { time: "4:26", label: "Use 6 crawlers to feed the urn" },
+    { time: "4:37", label: "Listen carefully to Keeper's 3-word name" },
 
-    // Skull Locations
-    { time: "00:19", label: "Skull 1: Mule Kick (bottom floor)" },
-    { time: "00:22", label: "Skull 2: Church window upstairs" },
-    { time: "00:23", label: "Skull 3: Samantha's room chest" },
-    { time: "00:26", label: "Skull 4: Right of Double Tap (rocks)" },
-    { time: "00:30", label: "Skull 5: Teleporter room sink" },
-    { time: "00:33", label: "Skull 6: Truck bed near rocket test" },
+    // Translation
+    { time: "4:49", label: "Match name to statues with matching icon" },
+    { time: "4:56", label: "Memorize the new translated symbols" },
 
-    // Sacrifices + Name
-    { time: "00:36", label: "Make 6 crawlers and let skulls eat them" },
-    { time: "00:39", label: "Listen to subtitles – remember the 3-word name (e.g., Stag, Heart, Griffin)" },
-    { time: "00:43", label: "Shoot urn to repeat name if needed" },
-
-    // Name Statues
-    { time: "00:46", label: "Power Room: Match name to statues (icons on bottom)" },
-    { time: "00:52", label: "Each statue gives a symbol – memorize them" },
-
-    // Collecting Symbols
-    { time: "00:55", label: "Kill zombies and collect dropped symbols" },
-    { time: "00:59", label: "Get all 3 matching symbols for the name" },
-
-    // Floor Shooting Step
-    { time: "01:01", label: "Shoot 3 symbols on floor in correct order" },
-    { time: "01:04", label: "If correct: Skulls rise, urn glows, arrow spawns" },
+    // Symbol Drop + Shooting
+    { time: "5:13", label: "Kill zombies until all 3 correct symbols drop" },
+    { time: "5:20", label: "Shoot 3 symbols on ground in correct order" },
+    { time: "5:24", label: "If correct: Keeper says 'That is my name'" },
 
     // Reforged Arrow
-    { time: "01:07", label: "Interact with purple light to receive new arrow" },
-    { time: "01:12", label: "Go to pyramid and place arrow in soul box" },
-    { time: "01:15", label: "Collect ~20 souls" },
-    { time: "01:18", label: "Interact to finish Void Bow upgrade" }
+    { time: "5:30", label: "Activate urn to receive reforged Void Arrow" },
+    { time: "5:36", label: "Place arrow in pyramid pedestal" },
+    { time: "5:39", label: "Collect ~20 souls to complete Void Bow" }
   ]
 };

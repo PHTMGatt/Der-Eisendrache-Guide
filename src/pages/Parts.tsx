@@ -38,6 +38,43 @@ const Parts: React.FC = () => (
         <li className="parts-page__item">Pick up the Golden Plunger from the time-travel room table</li>
       </ol>
     </section>
+
+    {/* Video Guides */}
+    <section className="parts-page__section">
+      <h2 className="parts-page__subtitle">Video Guides</h2>
+      <ul className="parts-page__list">
+        <li className="parts-page__item">
+          <a
+            className="parts-page__video-link"
+            href="https://www.youtube.com/watch?v=Dg8pX6MwbVo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch: All Parts Video Guide
+          </a>
+        </li>
+        <li className="parts-page__item">
+          <a
+            className="parts-page__video-link"
+            href="https://www.youtube.com/watch?v=jGSTfe_yc0M"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch: Panzer Helmet Guide
+          </a>
+        </li>
+        <li className="parts-page__item">
+          <a
+            className="parts-page__video-link"
+            href="https://www.youtube.com/watch?v=00sYn4Bj1hM"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch: Golden Plunger Guide
+          </a>
+        </li>
+      </ul>
+    </section>
   </div>
 );
 
