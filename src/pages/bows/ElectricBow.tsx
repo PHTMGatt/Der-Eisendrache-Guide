@@ -8,7 +8,6 @@ const ElectricBow: React.FC = () => (
   <div className="bows-page__outlet">
     <h1>Electric Bow – Storm</h1>
 
-    {/* Embedded YouTube Video */}
     <div className="video-container">
       <iframe
         src="https://www.youtube.com/embed/NhDv6R5YPEs?start=48"

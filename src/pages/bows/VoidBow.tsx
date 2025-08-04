@@ -8,7 +8,6 @@ const VoidBow: React.FC = () => (
   <div className="bows-page__outlet">
     <h1>Void Bow</h1>
 
-    {/* Embedded YouTube Video */}
     <div className="video-container">
       <iframe
         src="https://www.youtube.com/embed/9xBsUQrpDag?start=221"

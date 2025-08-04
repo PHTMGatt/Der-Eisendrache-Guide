@@ -39,7 +39,6 @@ const Parts: React.FC = () => (
       </ol>
     </section>
 
-    {/* Video Guides */}
     <section className="parts-page__section">
       <h2 className="parts-page__subtitle">Video Guides</h2>
       <ul className="parts-page__list">

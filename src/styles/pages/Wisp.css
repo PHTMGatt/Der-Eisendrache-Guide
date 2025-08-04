@@ -1,7 +1,6 @@
 /* 'Wisp.css' */
 /* ------------- */
 
-/* Base page container */
 .wisp-page {
   max-width: 900px;
   margin: 2rem auto;
@@ -48,30 +47,10 @@
   line-height: 1.5;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .wisp-page {
-    margin: 1rem;
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .wisp-page {
-    margin: 0.5rem;
-    padding: 0.75rem;
-  }
-  .wisp-page__title {
-    font-size: 1.75rem;
-  }
-  .wisp-page__subtitle {
-    font-size: 1.25rem;
-  }
-}
-/* Embedded video */
+/* Video container */
 .wisp-page__video-embed {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 56.25%;
   height: 0;
   margin-bottom: 1.5rem;
   border-radius: 0.75rem;
@@ -87,4 +66,28 @@
   height: 100%;
   border: none;
   border-radius: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wisp-page {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wisp-page {
+    margin: 0.5rem;
+    padding: 0.75rem;
+    margin-top: 7rem;
+  }
+
+  .wisp-page__title {
+    font-size: 1.75rem;
+  }
+
+  .wisp-page__subtitle {
+    font-size: 1.25rem;
+  }
 }

@@ -3,15 +3,15 @@
 
 /* 1. PAGE CONTAINER */
 .parts-page {
-  max-width: 900px;
-  margin: 2rem auto;
+  max-width: 800px;
+  margin: 12rem auto 2rem auto;
   padding: 1.5rem;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(4px);
   border-radius: 0.75rem;
   color: #efefef;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
-  margin-top: 12rem;
+  box-sizing: border-box;
 }
 
 /* 2. TYPOGRAPHY */
@@ -22,12 +22,10 @@
   color: #ffffff;
 }
 
-/* Section wrapper */
 .parts-page__section {
   margin-bottom: 1.5rem;
 }
 
-/* Section subtitles */
 .parts-page__subtitle {
   margin: 0 0 0.75rem;
   font-size: 1.25rem;
@@ -35,13 +33,12 @@
   color: #ffffff;
 }
 
-/* Lists */
+/* LIST STYLES */
 .parts-page__list {
   margin: 0;
   padding-left: 1.5rem;
 }
 
-/* Ordered vs unordered */
 .parts-page__list--ordered {
   list-style: decimal inside;
 }
@@ -50,7 +47,6 @@
   list-style: disc inside;
 }
 
-/* List items */
 .parts-page__item {
   margin-bottom: 0.5rem;
   line-height: 1.5;
@@ -72,8 +68,8 @@
 
 @media (max-width: 480px) {
   .parts-page {
-    margin: 0.5rem;
     padding: 0.75rem;
+    margin: 8rem 1rem 1rem;
   }
   .parts-page__title {
     font-size: 1.5rem;
@@ -107,4 +103,3 @@
   font-size: 1rem;
   display: inline-block;
 }
-

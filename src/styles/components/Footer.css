@@ -5,7 +5,7 @@
 .footer-site {
   position: relative;
   height: 80px;
-  margin-top: auto;      /* push to bottom in flex layout */
+  margin-top: auto;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -37,7 +37,6 @@
 }
 
 /* 4. RESPONSIVE ADJUSTMENTS */
-/* Tablet & small desktop */
 @media (max-width: 768px) {
   .footer-site {
     height: 60px;
@@ -47,7 +46,6 @@
   }
 }
 
-/* Mobile (~360px width) */
 @media (max-width: 480px) {
   .footer-site {
     height: 50px;

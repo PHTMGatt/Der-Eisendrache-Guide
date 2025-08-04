@@ -1,5 +1,6 @@
 // 'BowNav.tsx'
-// ------------- 
+// -------------
+
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/components/BowNav.css';
@@ -14,8 +15,8 @@ const bows = [
 
 const BowNav: React.FC = () => (
   <nav className="bow-nav" aria-label="Bow selection">
-    <h3 className="bow-nav__title">Select Your Bow</h3>
     <ul className="bow-nav__list">
+      <li className="bow-nav__label">Select Your Bow</li>
       {bows.map(({ path, label }) => (
         <li key={path} className="bow-nav__item">
           <NavLink

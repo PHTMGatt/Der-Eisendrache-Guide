@@ -8,7 +8,6 @@ const Wisp: React.FC = () => (
   <div className="wisp-page">
     <h1 className="wisp-page__title">Wisp Step – All Spawn Locations</h1>
 
-    {/* Embedded YouTube video, starts at 1:49 (109s) and ends at 2:30 (150s) */}
     <div className="wisp-page__video-embed">
       <iframe
         width="100%"
@@ -29,30 +28,14 @@ const Wisp: React.FC = () => (
 
     <h2 className="wisp-page__subtitle">Wisp Locations:</h2>
     <ol className="wisp-page__list">
-      <li className="wisp-page__item">
-        <strong>Radio – Church:</strong> On the table near the crafting bench in the church.
-      </li>
-      <li className="wisp-page__item">
-        <strong>Clock – Church:</strong> On the wall left of the Wonderfizz machine.
-      </li>
-      <li className="wisp-page__item">
-        <strong>Power Switch:</strong> On the wall just behind the main power switch.
-      </li>
-      <li className="wisp-page__item">
-        <strong>Globe – Richtofen’s Room:</strong> On the desk globe in Richtofen’s bedroom.
-      </li>
-      <li className="wisp-page__item">
-        <strong>Desk – Above Double Tap:</strong> On the desk with a chalkboard above Double Tap.
-      </li>
-      <li className="wisp-page__item">
-        <strong>Car Wheel – Outside Double Tap:</strong> On the broken car’s front wheel nearby.
-      </li>
-      <li className="wisp-page__item">
-        <strong>Sink – Quick Revive Room:</strong> On the sink faucet in the starting room.
-      </li>
-      <li className="wisp-page__item">
-        <strong>Clock – Bunks Area:</strong> On the desk clock in the underground sleeping area.
-      </li>
+      <li className="wisp-page__item"><strong>Radio – Church:</strong> On the table near the crafting bench in the church.</li>
+      <li className="wisp-page__item"><strong>Clock – Church:</strong> On the wall left of the Wonderfizz machine.</li>
+      <li className="wisp-page__item"><strong>Power Switch:</strong> On the wall just behind the main power switch.</li>
+      <li className="wisp-page__item"><strong>Globe – Richtofen’s Room:</strong> On the desk globe in Richtofen’s bedroom.</li>
+      <li className="wisp-page__item"><strong>Desk – Above Double Tap:</strong> On the desk with a chalkboard above Double Tap.</li>
+      <li className="wisp-page__item"><strong>Car Wheel – Outside Double Tap:</strong> On the broken car’s front wheel nearby.</li>
+      <li className="wisp-page__item"><strong>Sink – Quick Revive Room:</strong> On the sink faucet in the starting room.</li>
+      <li className="wisp-page__item"><strong>Clock – Bunks Area:</strong> On the desk clock in the underground sleeping area.</li>
     </ol>
   </div>
 );

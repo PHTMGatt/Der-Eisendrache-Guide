@@ -1,4 +1,5 @@
 // src/pages/Home.tsx
+
 import React, { useRef } from 'react';
 import '../styles/pages/Home.css';
 import { deGuide } from '../data/deGuide';
@@ -11,7 +12,7 @@ const Home: React.FC = () => {
     const seconds = min * 60 + sec;
 
     iframeRef.current?.contentWindow?.postMessage(
-      JSON.stringify({  
+      JSON.stringify({
         event: 'command',
         func: 'seekTo',
         args: [seconds, true],

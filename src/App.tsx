@@ -1,4 +1,4 @@
-// src/App.tsx
+// src/'App.tsx'
 // ------------------------
 
 import React from 'react';
@@ -22,7 +22,7 @@ import './styles/global.css';
 const App: React.FC = () => (
   <Router>
     <Header />
-    <div className="header-spacer" /> {/* Pushes content below fixed header */}
+    <div className="header-spacer" />
     <div className="page-wrapper">
       <Routes>
         <Route path="/" element={<Home />} />
