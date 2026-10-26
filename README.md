@@ -1,6 +1,6 @@
 # Der Eisendrache Easter Egg Guide
 
-![Der Eisendrache](/src/assets/images/DE-RM.png)
+![Der Eisendrache](docs/portfolio/cover.webp)
 
 Welcome to the **ultimate Der Eisendrache Easter Egg guide** — built for clarity, speed, and no-nonsense completion.
 
