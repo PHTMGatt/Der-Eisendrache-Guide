@@ -1,6 +1,6 @@
 # Der Eisendrache Easter Egg Guide
 
-![Der Eisendrache](docs/portfolio/cover.webp)
+![Der Eisendrache](https://raw.githubusercontent.com/PHTMGatt/12-React-Portfolio/main/src/assets/photos/DE.png)
 
 Welcome to the **ultimate Der Eisendrache Easter Egg guide** — built for clarity, speed, and no-nonsense completion.
 
